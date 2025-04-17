@@ -1,7 +1,7 @@
-import { Buttom } from './Button';
+import { Button } from './Button';
 
 export const Game = () => (
-  <div className="flex flex-col gap-8">
+  <div className="flex flex-col gap-8 text-center">
     <h1 className="text-3xl text-secondary">Rock Paper Scissors</h1>
     <button className="text-[20px] text-primary" type="button">
       {'Reset the score'.toUpperCase()}
@@ -23,9 +23,9 @@ export const Game = () => (
         Choose your move, rock paper or scissors?
       </p>
       <div className="flex gap-12">
-        <Buttom text="rock" />
-        <Buttom text="paprer" />
-        <Buttom text="scissors" />
+        <Button text="rock" />
+        <Button text="paprer" />
+        <Button text="scissors" />
       </div>
     </div>
   </div>
