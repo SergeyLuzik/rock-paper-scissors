@@ -1,3 +1,11 @@
-export const SwitchThemeButton = () => (
-  <button className="absolute top-0 right-0 size-24 bg-accent" type="button"></button>
-);
+export const SwitchThemeButton = () => {
+  const handleThemeSwitch = () => {
+    document.documentElement.classList.toggle('dark');
+  };
+  return (
+    <button
+      className="absolute top-0 right-0 size-24 bg-accent"
+      type="button"
+      onClick={handleThemeSwitch}></button>
+  );
+};
