@@ -1,26 +1,32 @@
-import { Buttom } from "./Button";
+import { Buttom } from './Button';
 
 export const Game = () => (
-  <div>
-    <h1>Rock Paper Scissors</h1>
-    <button type="button">{"Reset the score".toUpperCase()}</button>
-    <div>
-      <div>
-        <p>{"player score:".toUpperCase()}</p>
+  <div className="flex flex-col gap-8">
+    <h1 className="text-3xl text-secondary">Rock Paper Scissors</h1>
+    <button className="text-[20px] text-primary" type="button">
+      {'Reset the score'.toUpperCase()}
+    </button>
+    <div className="flex justify-between">
+      <div className="flex text-[14px] text-primary">
+        <p>{'player score:'.toUpperCase()}</p>
         <output>0</output>
       </div>
-      <div>
-        <p>{"computer score:".toUpperCase()}</p>
+      <div className="flex text-[14px] text-primary">
+        <p>{'computer score:'.toUpperCase()}</p>
         <output>0</output>
       </div>
     </div>
-    <p>YOU WON ! 🎉</p>
-    <span>VS</span>
-    <p>Choose your move, rock paper or scissors?</p>
+    <p className="text-[40px] text-accent-second">YOU WON ! 🎉</p>
+    <span className="text-[20px] text-primary">VS</span>
     <div>
-      <Buttom text={"rock".toUpperCase()} />
-      <Buttom text={"paprer".toUpperCase()} />
-      <Buttom text={"scissors".toUpperCase()} />
+      <p className="mb-6 text-[14px] font-medium text-third">
+        Choose your move, rock paper or scissors?
+      </p>
+      <div className="flex gap-12">
+        <Buttom text="rock" />
+        <Buttom text="paprer" />
+        <Buttom text="scissors" />
+      </div>
     </div>
   </div>
 );
