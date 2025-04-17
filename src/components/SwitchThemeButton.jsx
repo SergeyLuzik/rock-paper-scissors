@@ -4,7 +4,7 @@ export const SwitchThemeButton = () => {
   };
   return (
     <button
-      className="absolute top-0 right-0 size-24 bg-accent"
+      className="absolute top-0 right-0 size-24 cursor-pointer bg-accent"
       type="button"
       onClick={handleThemeSwitch}></button>
   );

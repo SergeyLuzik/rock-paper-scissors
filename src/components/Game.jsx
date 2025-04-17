@@ -3,7 +3,7 @@ import { Button } from './Button';
 export const Game = () => (
   <div className="flex flex-col gap-8 text-center">
     <h1 className="text-2xl text-secondary">Rock Paper Scissors</h1>
-    <button className="text-base text-primary" type="button">
+    <button className="cursor-pointer text-base text-primary" type="button">
       {'Reset the score'.toUpperCase()}
     </button>
     <div className="flex justify-between">

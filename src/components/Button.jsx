@@ -5,7 +5,7 @@ const SIZES = {
 export const Button = ({ text, size = 'base' }) => {
   return (
     <button
-      className={`flex items-center justify-center rounded-md bg-accent text-white hover:bg-accent-second ${SIZES[size]}`}
+      className={`flex cursor-pointer items-center justify-center rounded-md bg-accent text-white hover:bg-accent-second ${SIZES[size]}`}
       type="button">
       {text.toUpperCase()}
     </button>
