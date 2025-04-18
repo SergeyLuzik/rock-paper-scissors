@@ -12,7 +12,7 @@ export const SwitchThemeButton = () => {
   };
   return (
     <button
-      className={`absolute top-0 right-0 size-24 cursor-pointer`}
+      className={`absolute top-0 right-0 size-16 cursor-pointer lg:size-20 xl:size-24`}
       type="button"
       onClick={handleThemeSwitch}>
       {theme === 'dark' ? <LightModeIcon /> : <DarkModeIcon />}

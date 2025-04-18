@@ -35,7 +35,9 @@ export const Game = () => {
       <h1 className="text-2xl text-secondary">Rock Paper Scissors</h1>
       <ResetScoreButton />
       <Score score={score} />
-      {hasScore && <p className="text-4xl text-accent-second uppercase">{getResult(winner)}</p>}
+      {hasScore && (
+        <p className="text-md text-accent-second uppercase sm:text-4xl">{getResult(winner)}</p>
+      )}
       {choices.player && hasScore && <Choices choices={choices} />}
       <Choose onChoiceClick={handlePlayerChoice} />
     </div>
