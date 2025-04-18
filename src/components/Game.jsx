@@ -1,13 +1,15 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { defineWinner, getComputerChoice, getResult } from '../services/game';
 import { Button } from './Button';
-import { computerScoreIncrease, playerScoreIncrease } from '../actions/score';
+import { computerScoreIncrease, playerScoreIncrease, resetScore } from '../actions/score';
 import { setWinner } from '../actions/winner';
 
 export const Game = () => {
   const score = useSelector((state) => state.score);
   const dispatch = useDispatch();
-  const handleResetScore = () => {};
+  const handleResetScore = () => {
+    dispatch(resetScore());
+  };
   const winner = useSelector((state) => state.winner);
   const handlePlayerChoice = (playerChoice) => {
     const computerChoice = getComputerChoice();
