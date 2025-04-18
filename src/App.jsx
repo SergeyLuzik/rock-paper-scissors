@@ -11,7 +11,7 @@ export const App = () => {
     dispatch(switchMode());
   };
   return (
-    <div className="relative flex h-screen flex-col items-center justify-center">
+    <div className="relative flex h-full flex-col items-center justify-center">
       <SwitchThemeButton />
       {mode === 'greeting' ? <Greeting onPlayClick={handlePlayClick} /> : <Game />}
     </div>

@@ -38,12 +38,17 @@
   --text-2xl: 1.5rem;
   --text-3xl: 1.85rem;
   --text-4xl: 2rem;
+
   --spacing: 0.2rem;
+
+  --radius-*: initial;
+  --radius-xl: 0.7rem;
 }
 
 @layer base {
   html {
     font-family: 'Inter', sans-serif;
     font-size: 20px;
+    line-height: 1.2;
   }
 }
