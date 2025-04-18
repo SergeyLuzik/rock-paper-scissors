@@ -6,9 +6,9 @@ export const Button = ({ text, size = 'base', onClick }) => {
   return (
     <button
       onClick={onClick}
-      className={`flex cursor-pointer items-center justify-center rounded-md bg-accent text-white hover:bg-accent-second ${SIZES[size]}`}
+      className={`flex cursor-pointer items-center justify-center rounded-md bg-accent text-white uppercase hover:bg-accent-second ${SIZES[size]}`}
       type="button">
-      {text.toUpperCase()}
+      {text}
     </button>
   );
 };
