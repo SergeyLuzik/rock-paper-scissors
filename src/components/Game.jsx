@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { defineWinner, getComputerChoice, getResult } from '../utils/game';
+import { defineWinner, getComputerChoice, getResult } from '../utils';
 
 import { computerScoreIncrease, playerScoreIncrease } from '../actions/score';
 import { setWinner } from '../actions/winner';
