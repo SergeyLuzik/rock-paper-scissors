@@ -1,4 +1,4 @@
-import { SET_COMPUTER_CHOICE, SET_PLAYER_CHOICE } from '../actions/choices';
+import { SET_COMPUTER_CHOICE, SET_PLAYER_CHOICE, RESET_CHOICES } from '../actions/choices';
 
 const initialState = {
   player: null,
@@ -10,6 +10,8 @@ export const choices = (state = initialState, action) => {
       return { ...state, player: action.payload };
     case SET_COMPUTER_CHOICE:
       return { ...state, computer: action.payload };
+    case RESET_CHOICES:
+      return initialState;
     default:
       return state;
   }
